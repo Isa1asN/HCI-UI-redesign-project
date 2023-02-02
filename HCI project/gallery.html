@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gallery </title>
+</head>
+<body>
+    <div class="back">
+        <header class="sticky-top" style="background:rgba(32, 30, 30, 0.8);">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 mb-3 border-primary">
+                <div class="container">
+                <a href="#" class="navbar-brand "><span class="text-danger">MGBD</span>  PARTS</a>
+        
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-danger">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About-Us.html" class="nav-link">About us</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <section class=" text-white">
+            <div class="w-100 d-flex justify-content-between align-items-center my-4 p-4 text-white" style="background:rgba(32, 30, 30, 0.4);">
+                <div class="d-flex justify-content-center align-items-center">
+                    <label class="fs-5" for="Catagories mx-4">Status:</label>
+                    <div class="select">
+                        <select name="Catagories" class=" form-select bg-dark mx-3 text-white">
+                            <option value="">Select status</option>
+                            <option value="Seinen">New</option>
+                            <option value="Shounen">Old</option>
+                            <option value="Isekai">Recent</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <label class="fs-5" for="Catagories mx-4">Devices:</label>
+                    <div class="select">
+                        <select name="Catagories" class=" form-select bg-dark mx-3 text-white">
+                            <option value="">Select devices</option>
+                            <option value="Seinen">Engines</option>
+                            <option value="Shounen">Accessories</option>
+                            <option value="Isekai">Gears</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <label class="fs-5" for="Catagories mx-4">Body:</label>
+                    <div class="select">
+                        <select name="Catagories" class=" form-select bg-dark mx-3 text-white">
+                            <option value="">Select body part</option>
+                            <option value="Seinen">Interior</option>
+                            <option value="Shounen">Exterior</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" class=" btn btn-outline-light p-2 mx-3">Fillter</button>
+            </div>
+                <div class="container-fluid d-flex justify-content-between p-3">
+                    <div class="recent w-75 w-md-75">
+                        <h2 class="heading fs-4 mw-100 border-bottom p-2 mb-3">Accessories and Engines</h2>
+                        <div class="tvseries-container m-auto py-4 px-2 row gap-0" style="background:rgb(24, 22, 22);">
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ac1.webp" alt="attack on titan">
+                                </div>
+                                <h3 class=" fs-5">Chair decoration</h3>
+                                <span class=" fs-6">laser blue decoration</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ac2.jpg" alt="chainsaw man">
+                                </div>
+                                <h3 class=" fs-5">Steering wheel</h3>
+                                <span class=" fs-6">brand new steering wheel</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ac3.jpg" alt="demon slayer">
+                                </div>
+                                <h3 class="fs-5">Custom made dashbord</h3>
+                                <span class="fs-6">available in low amounts</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ac4.webp.crdownload" alt="Naruto">
+                                </div>
+                                <h3 class=" fs-5">Dashbord</h3>
+                                <span class=" fs-6">slightly used</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\eng1.jpg" alt="one piece">
+                                </div>
+                                <h3 class=" fs-5">Beast engine</h3>
+                                <span class=" fs-6">high powerd engine</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\eng2.jpg" alt="death note">
+                                </div>
+                                <h3 class=" fs-5">Titanium engine</h3>
+                                <span class=" fs-6">strong</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\eng3.jpg" alt="fullmetal alchemist">
+                                </div>
+                                <h3 class=" fs-5">Borales engine</h3>
+                                <span class=" fs-6">convinient</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\eng4.jpg" alt="spyxfamily">
+                                </div>
+                                <h3 class=" fs-5">steel</h3>
+                                <span class=" fs-6">stainless steel</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-light col-3 m-4">More +</a>
+                        </div>
+                        <h2 class="heading fs-4 mw-100 border-bottom p-2 mb-3">Brakes and Exhausts</h2>
+                        <div class="movie-container mt-4 m-auto py-4 px-2 row" style="background:rgb(24, 22, 22);">
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\br.jpg" alt="Free!: the Final Stroke - Kouhen">
+                                </div>
+                                <h3 class=" fs-5">Hydraulic brake</h3>
+                                <span class=" fs-6">affordable</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\br1.jpg" alt="Kidou Senshi SD Gundam: Musha">
+                                </div>
+                                <h3 class=" fs-5">Electromagnetic brake</h3>
+                                <span class=" fs-6">very efective</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\br3.jfif" alt="Sword Art Online: Progressive">
+                                </div>
+                                <h3 class=" fs-5">Mechanical brake</h3>
+                                <span class=" fs-6">classic</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\br4.jpg" alt="ONE PIECE FILM: RED">
+                                </div>
+                                <h3 class=" fs-5">Servo brake</h3>
+                                <span class=" fs-6">custom made</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ex1.webp" alt="Summer Ghost">
+                                </div>
+                                <h3 class=" fs-5">Nitro exhaust</h3>
+                                <span class=" fs-6">fast release</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ex2.jpg" alt="Xiongshi Shaonian">
+                                </div>
+                                <h3 class=" fs-5">Exhaust pipe</h3>
+                                <span class=" fs-6">reliable</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ex3.jpg" alt="Cyborg 009: Chou Ginga Densetsu">
+                                </div>
+                                <h3 class=" fs-5">Dragon exhaust</h3>
+                                <span class=" fs-6">can handle big engines</span>
+                            </div>
+                            <div class="box col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-2">
+                                <div class="box-img">
+                                    <img class=" img-fluid" src="img\ex4.jfif" alt="Yuru Camp△ Movie">
+                                </div>
+                                <h3 class=" fs-5">Let out</h3>
+                                <span class=" fs-6">simple and effective</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-light col-3 m-4">More +</a>
+                        </div>
+                    </div>
+                    <div class="toprated d-none d-md-block" style="width: 21%;">
+                        <h2 class = "heading w-75 mx-auto mb-3 border-bottom p-2 fs-4">Recent</h2>
+                        <ol class="">
+                            <li class="d-flex justify-content-center my-2 p-1" style="background:rgb(24, 22, 22);"><img class="w-25 h100 img-fluid" src="img\cust.jfif" alt="naruto img"><span class=" flex-grow-1 m-1 px-2 py-3">Custom made engine</span></li>
+                            <li class="d-flex justify-content-center my-2 p-1" style="background:rgb(24, 22, 22);"><img class="w-25 h100 img-fluid" src="img\cust1.jpg" alt="one piece img"><span class=" flex-grow-1 m-2 px-2 py-3">Classical Steering</span></li>
+                            <li class="d-flex justify-content-center my-2 p-1" style="background:rgb(24, 22, 22);"><img class="w-25 h100 img-fluid" src="img\gear.jfif" alt="bleach img"><span class=" flex-grow-1 m-2 px-2 py-3">Auto gear</span></li>
+                            <li class="d-flex justify-content-center my-2 p-1" style="background:rgb(24, 22, 22);"><img class="w-25 h100 img-fluid" src="img\head.jfif" alt="attack on titan img"><span class=" flex-grow-1 m-2 px-2 py-3">New head light</span></li>
+                            <li class="d-flex justify-content-center my-2 p-1" style="background:rgb(24, 22, 22);"><img class="w-25 h100 img-fluid" src="img\cust 3.webp" alt="demon slayer img"><span class=" flex-grow-1 m-2 px-2 py-3">tire wheels</span></li>
+                        </ol>
+                    </div>
+                </div>
+        </section>
+        <footer class="p-3 text-white text-center position-relative" style="background:rgba(32, 30, 30, 0.8);">
+            <div class="container">
+              <p class="lead">Copyright &copy; 2023 MGBD parts & services</p>
+      
+              <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+              </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
